@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 10 Jan, 2019 12:44:18 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.society.hibernate.ServentDetailsHibernate" table="servent_details">
+    
+        <id name="pkServentId" type="java.lang.Long">
+            <column name="pk_servent_Id" />
+            <generator class="increment" />
+        </id>
+    
+       	<property name="fkMemberId" type="java.lang.Long">
+            <column name="fk_member_Id" />
+        </property>
+         <property name="firstName" type="java.lang.String">
+            <column name="first_name" />
+        </property>
+        <property name="middleName" type="java.lang.String">
+            <column name="middle_name" />
+        </property>
+        <property name="lastName" type="java.lang.String">
+            <column name="last_name" />
+        </property>
+        <property name="contactNo" type="java.lang.Long">
+            <column name="mobile_no" />
+        </property>
+        <property name="altContactNo" type="java.lang.Long">
+            <column name="alternate_contact_no" />
+        </property>
+        <property name="address" type="java.lang.String">
+            <column name="address" />
+        </property>
+        <property name="memberName" type="java.lang.String">
+            <column name="member_name" />
+        </property>
+        <property name="joiningDate" type="java.util.Date">
+            <column name="joining_date" />
+        </property>
+        <property name="buildingName" type="java.lang.String">
+            <column name="building_name" />
+        </property>
+        <property name="wingName" type="java.lang.String">
+            <column name="wing_name" />
+        </property>
+        <property name="floorNo" type="java.lang.String">
+            <column name="floor_no" />
+        </property>
+        <property name="flatNo" type="java.lang.String">
+            <column name="flat_no" />
+        </property>
+        <property name="updateDate" type="java.util.Date">
+            <column name="update_date" />
+        </property>
+    </class>
+</hibernate-mapping>

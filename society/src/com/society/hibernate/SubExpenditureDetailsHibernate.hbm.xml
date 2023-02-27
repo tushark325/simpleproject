@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 9 Mar, 2019 7:11:04 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.society.hibernate.SubExpenditureDetailsHibernate" table="sub_expenditure_name">
+        <id name="pkSubExpId" type="java.lang.Long">
+            <column name="pk_sub_exp_id" />
+            <generator class="increment" />
+        </id>
+        
+        <property name="fkExpId" type="java.lang.Long">
+            <column name="fk_exp_id" />
+        </property>
+        <property name="expenditureName" type="java.lang.String">
+            <column name="expenditure_name" />
+        </property>
+        <property name="subExpenditureName" type="java.lang.String">
+            <column name="sub_expenditure_name" />
+        </property>
+        <property name="insertDate" type="java.util.Date">
+            <column name="insert_date" />
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="description" />
+        </property>
+        
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 22 Jan, 2019 11:36:59 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.society.hibernate.Notice_CircularHibernate" table="notice_circular_details">
+      
+        <id name="PkNoticeCircularId" type="java.lang.Long" access="field">
+            <column name="pk_notice_circular_Id" />
+            <generator class="increment" />
+        </id>
+        
+        <property name="memberName" type="java.lang.String">
+            <column name="member_name" />
+        </property>
+        <property name="fkMemberId" type="java.lang.Long">
+            <column name="fk_member_Id" />
+        </property> 
+            <property name="sendTo" type="java.lang.String">
+            <column name="send_to" />
+        </property>
+        
+        
+        <property name="date" type="java.util.Date">
+            <column name="date" />
+        </property>
+        <property name="subject" type="java.lang.String">
+            <column name="subject" />
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="description" />
+        </property>
+        
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 18 Feb, 2019 11:38:41 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.society.hibernate.AnnualMaintenanceFollowUpHibernate" table="annual_maintenance_followup_details">
+        <id name="pkMaintFollowUpId" type="long">
+            <column name="pk_maint_followup_Id" />
+            <generator class="increment" />
+        </id>
+        
+        <property name="fkMaintenanceId" type="java.lang.Long">
+            <column name="fk_maintenance_Id" />
+        </property>
+        <property name="annualMaintenanceName" type="java.lang.String">
+            <column name="annual_maintenance_name" />
+        </property>
+        <property name="maintenanceFollowUpDate" type="java.util.Date">
+            <column name="maintenance_followup_date" />
+        </property>
+        <property name="vendorName" type="java.lang.String">
+            <column name="vendor_name" />
+        </property>
+        <property name="Type" type="java.lang.String">
+            <column name="type" />
+        </property>
+        <property name="wingName" type="java.lang.String">
+            <column name="wing_name" />
+        </property>
+        <property name="buildingName" type="java.lang.String">
+            <column name="building_name" />
+        </property>
+           <property name="description" type="java.lang.String">
+            <column name="description" />
+        </property>
+        
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<class name="com.society.hibernate.UserDetailasHibernate" table="user_details" schema="society">
+		<id name="pkUserDetailsId" type="java.lang.Long" column="pk_user_details_id">
+			<generator class="increment" />
+		</id>
+		
+		<property
+			name="firstName"
+			type="java.lang.String"
+			column="first_name"
+		/>
+		<!--  <property
+			name="middleName"
+			type="java.lang.String"
+			column="middle_name"
+		/>  -->
+		<property
+			name="lastName"
+			type="java.lang.String"
+			column="last_name"
+		/>
+		<property
+			name="pancardNumber"
+			type="java.lang.String"
+			column="pancard_number"
+		/>
+		<property
+			name="contactNumber"
+			type="java.lang.String"
+			column="contact_number"
+		/>
+		<property
+			name="typeId"
+			type="java.lang.String"
+			column="type_id"
+		/>
+		<property
+			name="userName"
+			type="java.lang.String"
+			column="user_name"
+		/>
+		<property
+			name="password"
+			type="java.lang.String"
+			column="password"
+		/>
+	</class>
+</hibernate-mapping>

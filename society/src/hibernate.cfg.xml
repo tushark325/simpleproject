@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+       <!-- Database connection settings -->
+       <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+<!--        Old Database Name  -->
+<!--        <property name="connection.url">jdbc:mysql://localhost:3306/society2020</property> -->
+<!--        New Database Name  -->
+       <property name="connection.url">jdbc:mysql://localhost:3306/society</property>
+       <property name="connection.username">root</property>
+       <property name="connection.password">root</property>
+
+		<!-- <property name="hibernate.validator.autoregister_listeners">false</property>
+		<property name="hibernate.validator.apply_to_ddl">false</property>
+        JDBC connection pool (use the built-in)    -->
+    <property name="connection.pool_size">1</property>
+
+       <!-- SQL dialect -->
+       <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+
+       <!-- Disable the second-level cache  -->
+       <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+
+       <!-- Echo all executed SQL to stdout -->
+       <property name="show_sql">true</property>
+       
+      <mapping resource="com/society/hibernate/MemberDetailsHibernate.hbm.xml"/>
+      
+       <mapping resource="com/society/hibernate/VendorDetailsHibernate.hbm.xml"/>
+      <!--  <mapping resource="com/society/hibernate/ClientEnquiryHibernate.hbm.xml"/>
+       <mapping resource="com/society/hibernate/ClientResponseHibernate.hbm.xml"/> -->
+       <mapping resource="com/society/hibernate/PurchaseOrderHibernate.hbm.xml"/>
+       <mapping resource="com/society/hibernate/QuotationHibernate.hbm.xml"/>
+       <mapping resource="com/society/hibernate/EmployeePaymentBeanHibernate.hbm.xml"/>
+       <mapping resource="com/society/hibernate/ExpenditureDetails.hbm.xml"/>
+       <mapping resource="com/society/hibernate/ExpenditurePaymentBean.hbm.xml"/>
+       <mapping resource="com/society/hibernate/MemberBillingHibernate.hbm.xml"/>
+       <mapping resource="com/society/hibernate/ProductBillingHibernate.hbm.xml"/>
+       <mapping resource="com/society/hibernate/OfferLetterHibernate.hbm.xml"/>
+<!--   <mapping resource="com/society/hibernate/User.hbm.xml"/> -->
+       <!-- <mapping resource="com/society/hibernate/UserDetailasHibernate.hbm.xml"/> -->
+       <mapping resource="com/society/hibernate/PurchaseHibernate.hbm.xml"/>
+       <mapping resource="com/society/hibernate/PurchaseOrderCreateHibernate.hbm.xml"/>
+       <mapping resource="com/society/hibernate/VendorPaymentDetailsHibernate.hbm.xml"/>
+	   <!-- <mapping resource="com/society/hibernate/ClientPaymentDetailsHibernate.hbm.xml"/> -->	
+ 	   <mapping resource="com/society/hibernate/ExperienceLetterHibernate.hbm.xml"/>
+	   <mapping resource="com/society/hibernate/EmployeeLeaveHibernate.hbm.xml"/>
+	   <mapping resource="com/society/hibernate/EmployeeDetailsHibernate.hbm.xml"/>
+	   <mapping resource="com/society/hibernate/ServentDetailsHibernate.hbm.xml"/>
+	   <mapping resource="com/society/hibernate/AnnualMaintenanceDetailsHibernate.hbm.xml"/>
+	   <mapping resource="com/society/hibernate/AnnualMaintenceGenerationHibernate.hbm.xml"/>
+	   <mapping resource="com/society/hibernate/MemberPaymentDetailsHibernate.hbm.xml"/>
+	   <mapping resource="com/society/hibernate/Notice_CircularHibernate.hbm.xml"/>
+	   <mapping resource="com/society/hibernate/Complaint_EnquiryHibernate.hbm.xml"/>
+	   <mapping resource="com/society/hibernate/Complaint_EnquiryFollwUpHibernate.hbm.xml"/>
+	   <mapping resource="com/society/hibernate/VisitorsDetailsHibernate.hbm.xml"/>
+	   <mapping resource="com/society/hibernate/MonthlyContributionCostHibernate.hbm.xml"/>
+	   <mapping resource="com/society/hibernate/CorpusFundHibernate.hbm.xml"/>
+	   <mapping resource="com/society/hibernate/MemberMonthlyContributionCostHibernate.hbm.xml"/>
+	   <mapping resource="com/society/hibernate/MemberMaintenancePaymentHibernate.hbm.xml"/>
+	   <mapping resource="com/society/hibernate/AnnualMaintenanceFollowUpHibernate.hbm.xml"/>
+	   <mapping resource="com/society/hibernate/VendorPaymentDetailsForAMCHibernate.hbm.xml"/>
+	   <mapping resource="com/society/hibernate/SubExpenditureDetailsHibernate.hbm.xml"/>
+	   <mapping resource="com/society/hibernate/MonthlyContributionCostBySBAHibernate.hbm.xml"/>
+	   <mapping resource="com/society/hibernate/MemberMonthlyContributionCostForSBAHibernate.hbm.xml"/>
+	   <mapping resource="com/society/hibernate/AssociationBillingHibernate.hbm.xml"/>
+	   
+	      <mapping resource="com/society/hibernate/EventDetails.hbm.xml"/>
+
+	   
+	     <mapping resource="com/society/hibernate/UserDetailasHibernate.hbm.xml"/> 
+	     
+	         <mapping resource="com/society/hibernate/AccessControl.hbm.xml"/> 
+	  
+<!-- 	   <mapping resource="com/society/hibernate/UserDetailasHibernateNew.hbm.xml"/> -->
+	   
+        <!--    <mapping resource="com/society/hibernate/UserDetailasHibernate.hbm.xml"/> -->
+          <!--   <mapping resource="com/society/hibernate/UserDetailsBean.hbm.xml"/>-->  
+	  
+	   
+    </session-factory>  
+
+</hibernate-configuration>

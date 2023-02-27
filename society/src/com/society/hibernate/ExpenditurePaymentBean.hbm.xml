@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 9 Mar, 2019 5:25:53 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.society.hibernate.ExpenditurePaymentBean" table="expenditure_payment">
+       
+        <id name="pkExpPaymentId" type="java.lang.Long">
+            <column name="pk_expenditure_payment_id" />
+            <generator class="increment" />
+        </id>
+        
+        <property name="fkExpDetailId" type="java.lang.Long">
+            <column name="fk_expense_detail_id" />
+        </property>
+        <property name="fkSubExpDetailId" type="java.lang.Long">
+            <column name="fk_sub_expense_Id" />
+        </property>
+        <property name="expenseName" type="java.lang.String">
+            <column name="expense_name" />
+        </property>
+         <property name="subExpName" type="java.lang.String">
+            <column name="sub_expense_name" />
+        </property>
+        <property name="serviceProvider" type="java.lang.String">
+            <column name="service_provide" />
+        </property>
+        <property name="contactNumber" type="java.lang.Long">
+            <column name="contact_number" />
+        </property>
+        <property name="accountantName" type="java.lang.String">
+            <column name="accountant_name" />
+        </property>
+<!--         <property name="totalAmount" type="java.lang.Double">
+            <column name="TOTALAMOUNT" />
+        </property> -->
+        <property name="insertDate" type="java.util.Date">
+            <column name="insert_date" />
+        </property>
+        <property name="expAmount" type="java.lang.Double">
+            <column name="exp_amount" />
+        </property>
+        
+          <property name="description" type="java.lang.String">
+            <column name="description" />
+        </property>
+    </class>
+</hibernate-mapping>

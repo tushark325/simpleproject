@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 12 Jan, 2019 6:09:46 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.society.hibernate.AnnualMaintenceGenerationHibernate" table="annual_maintence_generation_details">
+        <id name="pkAnnualMaintenceGenId" type="java.lang.Long">
+            <column name="pk_anuual_maintence_gen_Id" />
+            <generator class="increment" />
+        </id>
+        
+        <property name="fkAnnualMaintenceId" type="java.lang.Long">
+            <column name="fk_annual_maintence_Id" />
+        </property>
+        
+         <property name="fkVendorId" type="java.lang.Long">
+            <column name="fk_vendor_Id" />
+        </property>
+        
+        <property name="annualMaintenceName" type="java.lang.String">
+            <column name="maintence_name" />
+        </property>
+        
+        <property name="startDate" type="java.util.Date">
+            <column name="start_date" />
+        </property>
+        
+        <property name="endDate" type="java.util.Date">
+            <column name="end_date" />
+        </property>
+        
+        <property name="description" type="java.lang.String">
+            <column name="description" />
+        </property>
+        <property name="vendorName" type="java.lang.String">
+            <column name="vendor_name" />
+        </property>
+         <property name="amount" type="java.lang.Long">
+            <column name="amount" />
+        </property>
+          <property name="balanceAmount" type="java.lang.Double">
+            <column name="balance_amount" />
+        </property>
+        
+        <property name="contactNo" type="java.lang.Long">
+             <column name="contact_no" />
+         </property>
+               
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 23 Jan, 2019 10:52:02 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.society.hibernate.VisitorsDetailsHibernate" table="visitors_details">
+        <id name="pkVisitorId" type="java.lang.Long" access="field">
+            <column name="pk_visitor_Id" />
+            <generator class="increment" />
+        </id>
+        
+      
+        <property name="fkMemberId" type="java.lang.Long">
+            <column name="fk_member_Id" />
+        </property>
+          <property name="memberName" type="java.lang.String">
+            <column name="member_name" />
+        </property>
+        
+        <property name="buildingName" type="java.lang.String">
+            <column name="building_name" />
+        </property>
+        <property name="wingName" type="java.lang.String">
+            <column name="wing_name" />
+        </property>
+        <property name="floorNo" type="java.lang.String">
+            <column name="floor_no" />
+        </property>
+        <property name="flatNo" type="java.lang.String">
+            <column name="flat_no" />
+        </property>
+        <property name="visitorName" type="java.lang.String">
+            <column name="visitor_name" />
+        </property>
+        <property name="contactNo" type="java.lang.Long">
+            <column name="contact_no" />
+        </property>
+        <property name="vehicalNo" type="java.lang.String">
+            <column name="vehical_no" />
+        </property>
+        <property name="todayDate"  type="java.sql.Date">
+            <column name="date" />
+        </property>
+        
+        <property name="inTime" type="java.lang.String">
+            <column name="in_time" />
+        </property>
+        <property name="outTime" type="java.lang.String">
+            <column name="out_time" />
+        </property>
+        <property name="reason" type="java.lang.String">
+            <column name="reason" />
+        </property>
+        <property name="status" type="java.lang.String">
+            <column name="status" />
+        </property>
+        
+    </class>
+</hibernate-mapping>

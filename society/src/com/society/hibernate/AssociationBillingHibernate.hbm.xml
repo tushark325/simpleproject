@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 1 Apr, 2019 11:54:18 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.society.hibernate.AssociationBillingHibernate" table="association_billing_details">
+        <id name="pkNameID" type="java.lang.Long">
+            <column name="pk_name_Id" />
+            <generator class="increment" />
+        </id>
+        
+        <property name="name" type="java.lang.String">
+            <column name="name" />
+        </property>
+        <property name="date" type="java.util.Date">
+            <column name="date" />
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="description" />
+        </property>
+        <property name="quantity" type="java.lang.Long">
+            <column name="quantity" />
+        </property>
+        <property name="salePrice" type="java.lang.Double">
+            <column name="sale_price" />
+        </property>
+        <property name="total" type="java.lang.Double">
+            <column name="total" />
+        </property>
+        <property name="grossTotal" type="java.lang.Double">
+            <column name="gross_total" />
+        </property>
+		<property name="billNo" type="java.lang.String">
+            <column name="bill_no" />
+        </property>
+    </class>
+</hibernate-mapping>

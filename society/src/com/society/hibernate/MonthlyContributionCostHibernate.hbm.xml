@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 5 Feb, 2019 11:07:47 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.society.hibernate.MonthlyContributionCostHibernate" table="monthly_contribution_cost_details">
+        <id name="pkMonthlyContributionId" type="java.lang.Long">
+            <column name="pk_monthly_contribution_cost_Id" />
+            <generator class="increment" />
+        </id>
+        
+        <property name="monthlyContributionCost" type="java.lang.Double">
+            <column name="monthly_contribution_cost" />
+        </property>
+        <property name="date" type="java.util.Date">
+        	<column name="date" />
+        </property>        
+        <property name="month" type="java.lang.String">
+            <column name="month" />
+        </property>
+        <property name="cutOffDate" type="java.util.Date">
+            <column name="cut_off_date" />
+        </property>
+        <property name="maintenanceType" type="java.lang.String">
+            <column name="maintenance_type" />
+        </property>
+        <property name="status" type="java.lang.String">
+            <column name="status" />
+        </property>
+         <property name="update" type="java.util.Date">
+            <column name="update_date" />
+        </property>
+        <property name="sbaChargePerSqFeet" type="java.lang.Double">
+            <column name="sbaSquareFeetCharge" />
+        </property>
+        
+    </class>
+</hibernate-mapping>

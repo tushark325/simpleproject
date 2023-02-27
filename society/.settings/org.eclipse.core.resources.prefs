@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+encoding//WebContent/jsp/AMCReport.jsp=UTF-8
+encoding//WebContent/jsp/CahBankBook.jsp=UTF-8
+encoding//WebContent/jsp/EventCircular.jsp=UTF-8
+encoding//WebContent/jsp/Events.jsp=UTF-8
+encoding//WebContent/jsp/MemberBillingPDF.jsp=UTF-8
+encoding//WebContent/jsp/MemberMonthlyContributionCost.jsp=UTF-8
+encoding//WebContent/jsp/Purchase_Order_RecivePDF.jsp=UTF-8
+encoding//WebContent/jsp/VisitorForm.jsp=UTF-8
+encoding//WebContent/jsp/VreportsBetweenTwoDates.jsp=UTF-8
+encoding//src/com/society/services/MemberMonthlyContributionCostMail.java=UTF-8

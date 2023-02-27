@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 22 Jan, 2019 4:46:04 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.society.hibernate.Complaint_EnquiryFollwUpHibernate" table="complaint_enquiry_followup">
+       
+        <id name="pkFollowUpId" type="java.lang.Long">
+            <column name="pk_com_enq_followUp_Id" />
+            <generator class="increment" />
+        </id>
+        
+        <property name="fkMemberId" type="java.lang.Long">
+            <column name="fk_mem_Id" />
+        </property>
+        
+        <property name="memberName" type="java.lang.String">
+            <column name="member_name" />
+        </property>
+        <property name="todayDate2" type="java.util.Date">
+            <column name="date" />
+        </property>
+        <property name="description2" type="java.lang.String">
+            <column name="description" />
+        </property>
+        <property name="status2" type="java.lang.String">
+            <column name="status" />
+        </property>
+        <property name="responseDetails2" type="java.lang.String">
+            <column name="response_details" />
+        </property>
+        
+        <property name="typeForFollowUp" type="java.lang.String">
+            <column name="type" />
+        </property>
+        
+        <property name="emailId" type="java.lang.String">
+            <column name="email" />
+        </property>
+        
+        <property name="complaintNo" type="java.lang.Long">
+            <column name="complaintNo" />
+        </property>
+        
+    </class>
+</hibernate-mapping>

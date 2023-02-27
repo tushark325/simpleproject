@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 22 Aug, 2018 12:37:33 PM by Hibernate Tools 3.5.0.Final -->
+ <hibernate-mapping>
+    <class name="com.society.hibernate.UserDetailsBean" table="user_details">
+        
+        <id name="pkUserDetailsId" type="java.lang.String">
+            <column name="pk_user_details_id" />
+            <generator class="pkUserDetailsId" />
+        </id>
+
+
+       <!--   <property name="usrId" type="java.lang.String">
+            <column name="usrId" />
+        </property> -->
+        <property name="firstName" type="java.lang.String">
+            <column name="first_name" />
+        </property>
+        <!--  <property name="middleName" type="java.lang.String">
+            <column name="middle_name" />
+        </property>  -->
+        <property name="lastName" type="java.lang.String">
+            <column name="last_name" />
+        </property>
+        <property name="pancardNumber" type="java.lang.String">
+            <column name="pancard_number" />
+        </property>
+        <property name="contactNumber" type="java.lang.String">
+            <column name="contact_number" />
+        </property>
+        <property name="typeId" type="java.lang.String">
+            <column name="type_id" />
+        </property>
+        <property name="userName" type="java.lang.String">
+            <column name="user_name" />
+        </property>
+        
+        <!-- <property name="module" type="java.lang.String">
+            <column name="module" />
+        </property> -->
+        <property name="password" type="java.lang.String">
+            <column name="password" />
+        </property>
+       
+        
+    </class>
+</hibernate-mapping>  

@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 22 Jan, 2019 2:45:12 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.society.hibernate.Complaint_EnquiryHibernate" table="complaint_enquiry_details">
+      
+        <id name="pkCom_EnqId" type="java.lang.Long" access="field">
+            <column name="pk_com_enq_Id" />
+            <generator class="increment" />
+        </id>
+        
+         <property name="fkMemberId" type="java.lang.Long">
+            <column name="fk_member_Id" />
+        </property>
+        
+         <property name="memberName" type="java.lang.String">
+            <column name="member_name" />
+        </property>
+        
+        <property name="todayDate" type="java.util.Date">
+            <column name="date" />
+        </property>
+        <property name="buildingName" type="java.lang.String">
+            <column name="building_name" />
+        </property>
+        <property name="wingName" type="java.lang.String">
+            <column name="wing_name" />
+        </property>
+        <property name="floorName" type="java.lang.String">
+            <column name="floor_no" />
+        </property>
+        <property name="flatNo" type="java.lang.String">
+            <column name="flatNo" />
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="description" />
+        </property>
+        
+        <property name="type" type="java.lang.String">
+            <column name="type" />
+        </property>
+        
+        <property name="email" type="java.lang.String">
+            <column name="email" />
+        </property>
+        
+        <property name="view" type="java.lang.String">
+            <column name="view" />
+        </property>
+        
+    </class>
+</hibernate-mapping>

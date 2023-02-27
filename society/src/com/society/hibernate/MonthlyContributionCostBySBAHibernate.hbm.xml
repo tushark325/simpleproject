@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 20 Mar, 2019 2:51:49 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.society.hibernate.MonthlyContributionCostBySBAHibernate" table="monthly_contribution_cost_by_sba">
+    
+        <id name="pkMemMonthlyContriCostBySBAID" type="java.lang.Long">
+            <column name="pk_mem_monthly_contri_cost_SBA_Id" />
+            <generator class="increment" />
+        </id>
+        <property name="sbaPerPrice" type="java.lang.Double">
+            <column name="sba_per_price" />
+        </property>
+        <property name="date" type="java.util.Date">
+            <column name="date" />
+        </property>
+        <property name="cutOffDays" type="java.lang.Long">
+            <column name="cut_off_days" />
+        </property>
+        <property name="month" type="java.lang.String">
+            <column name="month" />
+        </property>
+        <property name="update" type="java.util.Date">
+            <column name="update_date" />
+        </property>
+         <property name="cutOffDate" type="java.util.Date">
+            <column name="cut_off_date" />
+        </property>
+        
+    </class>
+</hibernate-mapping>

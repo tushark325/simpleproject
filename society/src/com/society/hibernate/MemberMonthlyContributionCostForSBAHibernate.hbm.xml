@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 20 Mar, 2019 3:13:45 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.society.hibernate.MemberMonthlyContributionCostForSBAHibernate" table="member_monthly_contribution_cost_for_sba_details">
+        <id name="pkMemContriCostSBAId" type="java.lang.Long">
+            <column name="pk_mem_contri_cost_sba_Id" />
+            <generator class="increment" />
+        </id>
+        
+        <property name="fkMemId" type="java.lang.Long">
+            <column name="fk_mem_Id" />
+        </property>
+        <property name="firstName" type="java.lang.String">
+            <column name="first_name" />
+        </property>
+        <property name="middleName" type="java.lang.String">
+            <column name="middle_name" />
+        </property>
+        <property name="lastName" type="java.lang.String">
+            <column name="last_name" />
+        </property>
+        <property name="sbaPerPrice" type="java.lang.Double">
+            <column name="sba_per_price" />
+        </property>
+        <property name="monthlyContributionCost" type="java.lang.Double">
+            <column name="monthly_contribution_cost" />
+        </property>
+        <property name="balanceAmount" type="java.lang.Double">
+            <column name="balance_amount" />
+        </property>
+        <property name="month" type="java.lang.String">
+            <column name="month" />
+        </property>
+        <property name="contactNo" type="java.lang.Long">
+            <column name="contact_no" />
+        </property>
+        <property name="sbArea" type="java.lang.Double">
+            <column name="sbArea" />
+        </property>
+        <property name="update" type="java.util.Date">
+            <column name="update_date" />
+        </property>
+        
+    </class>
+</hibernate-mapping>

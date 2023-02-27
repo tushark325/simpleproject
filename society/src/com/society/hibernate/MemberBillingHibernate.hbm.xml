@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+    
+    <class name="com.society.hibernate.MemberBillingHibernate" table="member_billing_details" schema="society">
+    
+    	<id name="getPkMemberBillingId" type="java.lang.Long" column="pk_Member_Billing_id">
+			<generator class="increment" />
+		</id>
+
+
+    <property
+        name="fkMemberId"
+        type="java.lang.Long"
+        column="fk_member_id"
+    />
+
+	<property
+        name="memberName"
+        type="java.lang.String"
+        column="member_name"
+    />
+    
+    <property
+        name="billingDate"
+        type="java.sql.Date"
+        column="date_of_billing"
+    />
+    
+<!--      <property
+        name="billingPeriodFrom"
+        type="java.sql.Date"
+        column="date_of_billing_from"
+    />
+
+       <property
+        name="billingPeriodTo"
+        type="java.sql.Date"
+        column="date_of_billing_to"
+    /> -->
+    
+   <!--  <property
+        name="srNO"
+        type="java.lang.Long"
+        column="sr_number"
+    />	 -->
+    
+    <property
+        name="description"
+        type="java.lang.String"
+        column="description"
+    />
+    
+  <!--   <property
+        name="quantity"
+        type="java.lang.Long"
+        column="quantity"
+    />
+    
+    <property
+        name="unit"
+        type="java.lang.Double"
+        column="unit_price"
+    /> -->
+    
+    <property
+        name="amount"
+        type="java.lang.Double"
+        column="amount"
+    />
+
+<!--    
+     <property
+        name="subTotal"
+        type="java.lang.Double"
+        column="sub_total"
+    />
+    
+     <property
+        name="gst"
+        type="java.lang.Double"
+        column="gst"
+    />
+    
+     <property
+        name="vat"
+        type="java.lang.Double"
+        column="vat"
+    />
+     -->
+    <property
+        name="grossTotal1"
+        type="java.lang.Double"
+        column="gross_total"
+    />
+    
+        <property
+        name="balanceAmount"
+        type="java.lang.Double"
+        column="balance_amount"
+    />
+    
+    
+        <property
+        name="billNo"
+        type="java.lang.String"
+        column="bill_no"
+    />
+    
+    <property
+        name="ContactNo"
+        type="java.lang.Long"
+        column="contact_no"
+    />
+    
+    </class>
+</hibernate-mapping>
+   

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 1 Mar, 2019 4:23:20 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.society.hibernate.VendorPaymentDetailsForAMCHibernate" table="vendor_payment_details_amc_details">
+        <id name="pkPaymentAMCID" type="java.lang.Long">
+            <column name="pk_payment_amc_Id" />
+            <generator class="increment" />
+        </id>
+        
+        <property name="fkVebdorId" type="java.lang.Long">
+            <column name="fk_vendor_Id" />
+        </property>
+        <property name="vendorName" type="java.lang.String">
+            <column name="vendor_name" />
+        </property>
+        <property name="totalAmount" type="java.lang.Double">
+            <column name="total_amount" />
+        </property>
+        <property name="balanceAmount" type="java.lang.Double">
+            <column name="balance_amount" />
+        </property>
+        <property name="paidAmount" type="java.lang.Double">
+            <column name="paid_amount" />
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="description" />
+        </property>
+        
+          <property name="insertDate"  type="java.sql.Date">
+            <column name="insert_date" />
+        </property>
+        <property name="contactNo" type="java.lang.Long">
+            <column name="contact_no" />
+        </property>
+        
+    </class>
+</hibernate-mapping>
